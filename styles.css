@@ -1,9 +1,74 @@
+/* Universal Selector to set all elements to have 0 margin and 0 padding. Will make webpage look the same in all browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 13px;
+  line-height: 1.25;
+  opacity: 70%;
+}
+
+small {
+  font-size: 11px;
+  opacity: 50%;
+}
+
+/* ID & CLASS SELECTORS */
+
 #testimonial-grid-container {
   min-width: 110px;
   border: 3px solid red;
 }
 
+.testimonial {
+  border-radius: 12px;
+}
+
+.box-purple,
+.box-gray,
+.box-black {
+  color: hsl(0, 0%, 100%);
+}
+
 .box-purple {
   background-color: #733fc8;
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 83% 0%;
   border: 1px solid hsl(263, 55%, 52%);
+  width: 540px;
+  padding: 26px 32px;
+}
+
+.testimonial-author {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.author-headshot {
+  width: 34px;
+  border: 3px solid #a775f1;
+  border-radius: 50%;
+  align-self: center; /*keeps image from streching with parent flex container*/
 }
