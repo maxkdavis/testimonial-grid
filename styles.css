@@ -35,8 +35,9 @@ small {
 }
 
 /* ID & CLASS SELECTORS */
-#testimonial-grid-container {
-  min-width: 110px;
+#testimonial-grid {
+  display: grid;
+  width: min(95%, 70rem); /*take the smaller between 95% of parent or 70 * 16px (1120). The latter wins here.*/
   border: 3px solid red;
 }
 
@@ -63,6 +64,7 @@ small {
 .box-gray {
   background-color: hsl(217, 19%, 35%);
   color: #fff;
+  /* width: 270px; */
 }
 
 /* WHITE TESTIMONIAL */
@@ -75,6 +77,7 @@ small {
 .box-black {
   background-color: hsl(219, 29%, 14%);
   color: #ecf2f8;
+  /* width: 540px; */
 }
 
 .testimonial-author {
