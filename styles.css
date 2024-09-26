@@ -45,33 +45,36 @@ small {
   padding: 26px 32px;
 }
 
-.box-purple,
-.box-gray {
-  color: hsl(0, 0%, 100%);
-}
-
-.box-black {
-  color: #ecf2f8;
+/* PURPLE TESTIMONIAL */
+.box-purple {
+  background-color: #733fc8;
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 83% 0%;
+  color: #fff;
+  /* width: 540px; */
 }
 
 .box-purple p {
   color: #cfcfcf;
 }
 
-.box-purple {
-  background-color: #733fc8;
-  background-image: url(./images/bg-pattern-quotation.svg);
-  background-repeat: no-repeat;
-  background-position: 83% 0%;
-  /* width: 540px; */
-}
-
+/* GRAY TESTIMONIAL */
 .box-gray {
   background-color: hsl(217, 19%, 35%);
+  color: #fff;
 }
 
+/* WHITE TESTIMONIAL */
+.box-white {
+  background-color: #fff;
+  color: #48556a;
+}
+
+/* BLACK TESTIMONIAL */
 .box-black {
   background-color: hsl(219, 29%, 14%);
+  color: #ecf2f8;
 }
 
 .testimonial-author {
