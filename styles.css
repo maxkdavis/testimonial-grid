@@ -6,6 +6,7 @@
 }
 
 body {
+  background-color: #ecf2f8;
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: 13px;
 }
@@ -34,7 +35,6 @@ small {
 }
 
 /* ID & CLASS SELECTORS */
-
 #testimonial-grid-container {
   min-width: 110px;
   border: 3px solid red;
@@ -42,12 +42,20 @@ small {
 
 .testimonial {
   border-radius: 12px;
+  padding: 26px 32px;
 }
 
 .box-purple,
-.box-gray,
-.box-black {
+.box-gray {
   color: hsl(0, 0%, 100%);
+}
+
+.box-black {
+  color: #ecf2f8;
+}
+
+.box-purple p {
+  color: #cfcfcf;
 }
 
 .box-purple {
@@ -55,9 +63,15 @@ small {
   background-image: url(./images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position: 83% 0%;
-  border: 1px solid hsl(263, 55%, 52%);
-  width: 540px;
-  padding: 26px 32px;
+  /* width: 540px; */
+}
+
+.box-gray {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.box-black {
+  background-color: hsl(219, 29%, 14%);
 }
 
 .testimonial-author {
@@ -68,7 +82,11 @@ small {
 
 .author-headshot {
   width: 34px;
-  border: 3px solid #a775f1;
   border-radius: 50%;
   align-self: center; /*keeps image from streching with parent flex container*/
+}
+
+.box-purple .author-headshot,
+.box-black .author-headshot {
+  border: 3px solid #a775f1;
 }
