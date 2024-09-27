@@ -9,6 +9,10 @@ body {
   background-color: #ecf2f8;
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: 13px;
+  min-height: 100vh;
+  place-content: center;
+  text-rendering: optimizeSpeed;
+  /* line-height: 1.5; */
 }
 
 h1 {
@@ -20,7 +24,7 @@ h1 {
 h2 {
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 p {
@@ -34,16 +38,34 @@ small {
   opacity: 50%;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 /* ID & CLASS SELECTORS */
 #testimonial-grid {
   display: grid;
+  gap: 2rem; /*32 px*/
+  grid-template-columns: repeat(4, 1fr);
   width: min(95%, 70rem); /*take the smaller between 95% of parent or 70 * 16px (1120). The latter wins here.*/
-  border: 3px solid red;
+  border: 1px solid red;
+  margin-inline: auto;
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
 }
 
 .testimonial {
   border-radius: 12px;
   padding: 26px 32px;
+}
+
+.testimonial:last-child {
+  grid-column-start: 4; /*tells CSS to place this element starting on column 4*/
+  grid-row-start: 1;
+  grid-row-end: span 2;
 }
 
 /* PURPLE TESTIMONIAL */
