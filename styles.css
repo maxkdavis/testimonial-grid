@@ -1,8 +1,18 @@
-/* Universal Selector to set all elements to have 0 margin and 0 padding. Will make webpage look the same in all browsers */
-* {
-  margin: 0;
-  padding: 0;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
 }
 
 body {
@@ -12,7 +22,6 @@ body {
   min-height: 100vh;
   place-content: center;
   text-rendering: optimizeSpeed;
-  /* line-height: 1.5; */
 }
 
 h1 {
@@ -29,7 +38,7 @@ h2 {
 
 p {
   font-size: 13px;
-  line-height: 1.25;
+  line-height: 1.5;
   opacity: 70%;
 }
 
@@ -59,7 +68,7 @@ img {
 
 .testimonial {
   border-radius: 12px;
-  padding: 26px 32px;
+  padding: 2rem;
 }
 
 .testimonial:last-child {
@@ -106,6 +115,11 @@ img {
   display: flex;
   gap: 12px;
   margin-bottom: 14px;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
 }
 
 .author-headshot {
