@@ -59,7 +59,7 @@ img {
   gap: 2rem; /*32 px*/
   grid-template-columns: repeat(4, 1fr);
   width: min(95%, 70rem); /*take the smaller between 95% of parent or 70 * 16px (1120). The latter wins here.*/
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-inline: auto;
 }
 
@@ -136,10 +136,6 @@ img {
 
 /* MEDIA QUERY FOR MOBILE LAYOUT */
 @media (max-width: 850px) {
-  /* body {
-    background: blue;
-  } */
-
   #testimonial-grid {
     display: grid;
     gap: 1.5rem; /*24 px*/
