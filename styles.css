@@ -13,6 +13,7 @@ h3,
 h4,
 p {
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -131,4 +132,28 @@ img {
 .box-purple .author-headshot,
 .box-black .author-headshot {
   border: 3px solid #a775f1;
+}
+
+/* MEDIA QUERY FOR MOBILE LAYOUT */
+@media (max-width: 850px) {
+  /* body {
+    background: blue;
+  } */
+
+  #testimonial-grid {
+    display: grid;
+    gap: 1.5rem; /*24 px*/
+    grid-template-columns: 327px;
+    margin-inline: auto;
+    place-content: center;
+  }
+
+  .testimonial:last-child {
+    grid-column-start: 1;
+    grid-row-start: 5;
+  }
+
+  .grid-col-span-2 {
+    grid-column: span 1;
+  }
 }
